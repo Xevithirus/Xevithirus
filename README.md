@@ -20,8 +20,6 @@ I'm a full-stack developer and low-level tinkerer on a mission to build digital 
 
 ### 📜 Attributes
 
-#
-
 ![Xevithirus' GitHub stats](https://github-readme-stats.vercel.app/api?username=xevithirus&show_icons=true&theme=tokyonight)
 
 #
