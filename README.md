@@ -1,8 +1,8 @@
 # 👨‍💻 Xevithirus
 
-**`Bit Basher (Full-Stack Developer | Tech-Enthusiast)`**
+**`Class: Bit Basher    Specialization: Full-Stack Developer`**
 
-I'm a full-stack developer and low-level tinkerer on a mission to build digital adventures not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of hurdles be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I make a lasting impact on even one soul with my software, just one life improved in some small way, I will have won. 
+I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of hurdles be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I make a lasting impact on even one soul with my software, just one life improved in some small way, I will have won. 
 
 ### 🛠️ Languages & Tools
 
