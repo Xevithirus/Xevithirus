@@ -1,4 +1,4 @@
-# 👨‍💻 Xevithirus
+# ⚔ Xevithirus 🛡
 
 **`Class: Bit Basher    Specialization: Full-Stack Developer`**
 
