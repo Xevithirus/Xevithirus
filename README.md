@@ -1,4 +1,4 @@
-# <h1 align="center">⚔ Character Sheet ⚔️</h1>
+# <h1 align="center">⚔️ Character Sheet ⚔️</h1>
 
 <!-- Profile Heading -->
 <h1 align="center"><strong>Xevithirus</strong></h1>
