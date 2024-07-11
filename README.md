@@ -13,7 +13,7 @@ HP:[❤❤❤🤍🤍]
   </tr>
   <tr>
     <td><strong>HP:</strong></td>
-    <td>██████████ 100/100</td>
+    <td>❤❤❤🤍🤍</td>
   </tr>
   <tr>
     <td><strong>Level:</strong></td>
@@ -21,7 +21,7 @@ HP:[❤❤❤🤍🤍]
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td>500 XP</td>
+    <td>██████████ 100/1000 EXP</td>
   </tr>
 </table>
 
