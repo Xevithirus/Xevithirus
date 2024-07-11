@@ -15,11 +15,11 @@
   </tr>
   <tr>
     <td><strong>Level:</strong></td>
-    <td>Level: 0</td>
+    <td>${{ env.level }}</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td>Total Experience: 0 EXP</td>
+    <td>${{ env.xp }} EXP</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>HP:</strong></td>
