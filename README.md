@@ -15,11 +15,11 @@
   </tr>
   <tr>
     <td><strong>Level:</strong></td>
-    <td>5</td>
+    <td>Level: 0</td>
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td>██████████ 100/1000 EXP</td>
+    <td>Total Experience: 0 EXP</td>
   </tr>
   <tr>
     <td><strong>HP:</strong></td>
