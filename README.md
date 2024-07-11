@@ -1,12 +1,29 @@
 # ⚔ Xevithirus  
 HP:[❤❤❤🤍🤍]
 
-<!-- Profile Heading -->
-<h1 align="center">
-  <img src="https://your-image-url.com/rpg-character.png" alt="Character Icon" width="100">
-  <br>
-  [Your GitHub Username]
-</h1>
+<!-- Character Stats -->
+<table align="center">
+  <tr>
+    <td><strong>Class:</strong></td>
+    <td>Bit Basher</td>
+  </tr>
+  <tr>
+    <td><strong>Specialization:</strong></td>
+    <td>Full-Stack Developer</td>
+  </tr>
+  <tr>
+    <td><strong>HP:</strong></td>
+    <td>██████████ 100/100</td>
+  </tr>
+  <tr>
+    <td><strong>Level:</strong></td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td><strong>Total Experience:</strong></td>
+    <td>500 XP</td>
+  </tr>
+</table>
 
 **`Class: Bit Basher    Specialization: Full-Stack Developer`**
 
