@@ -1,9 +1,10 @@
 # <h2 align="center">⚔️ Character Sheet ⚔️</h2>
 
 <!-- Profile Heading -->
-<h1 align="center"><strong>Xevithirus</strong></h1>
+<h1 align="center"><strong><span style="color:blue">XEVITHIRUS</span></strong></h1>
 
 <!-- Character Stats -->
+<h2>
 <table align="center">
   <tr>
     <td><strong>Class:</strong></td>
@@ -26,17 +27,11 @@
     <td>❤❤❤🤍🤍</td>
   </tr>
 </table>
-
-<!-- Details Section -->
-<h2 align="center">Details</h2>
-<p align="center">
-  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of hurdles be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I make a lasting impact on even one soul with my software--just one life improved in some small way--I will have won.
-</p>
-
----
+</h2>
 
 <!-- Abilities Section -->
-<h2 align="center">Abilities</h2>
+<h2 align="center">Abilities 
+<br></br>
 <p align="center">
   <img alt="C++" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
   <img alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
@@ -59,21 +54,28 @@
   <img alt="Vite" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
   <img alt="Vim" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" />
 </p>
-
----
+</h2>
 
 <!-- Attributes Section -->
-<h2 align="center">Attributes</h2>
+<h2 align="center">Attributes
+<br></br>
 <p align="center">
   <!-- GitHub Readme Stats -->
   <img src="https://github-readme-stats.vercel.app/api?username=xevithirus&show_icons=true&theme=tokyonight" alt="GitHub Stats">
 </p>
+</h2>
 
----
+*****
+
+<!-- Details Section -->
+<h2 align="center">Details</h2>
+<p>
+  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of hurdles be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I make a lasting impact on even one soul with my software--just one life improved in some small way--I will have won.
+</p>
 
 <!-- Quests Section -->
 <h2 align="center">Quests</h2>
-<ul align="center">
+<ul>
   <li>Complete Diploma in Digital Technology Development and Design</li>
   <li>Contribute to an Open Source Project</li>
   <li>Learn the basics of x86 Assembly</li>
