@@ -4,7 +4,6 @@
 <h1 align="center"><strong><span style="color:blue">XEVITHIRUS</span></strong></h1>
 
 <!-- Character Stats -->
-<h2>
 <table align="center">
   <tr>
     <td><strong>Class:</strong></td>
@@ -27,7 +26,6 @@
     <td>❤❤❤🤍🤍</td>
   </tr>
 </table>
-</h2>
 
 <!-- Abilities Section -->
 <h2 align="center">Abilities 
