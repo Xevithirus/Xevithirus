@@ -13,6 +13,7 @@ if result.returncode == 0:
     level = int(output_lines[0])
     current_exp = int(output_lines[1])
     required_exp = int(output_lines[2])
+    total_exp = int(output_lines[3])
 
     # Read the existing README.md content
     with open('README.md', 'r') as file:
@@ -20,6 +21,7 @@ if result.returncode == 0:
 
     # Update the placeholders in README.md with the calculated values
     readme_content = re.sub(r'{level}', str(level), readme_content)
+    readme_content = re.sub(r'{total_exp}', str(total_exp), readme_content)
     readme_content = re.sub(r'{current_exp}', f'{current_exp}/{required_exp}', readme_content)
 
     # Write the updated content back to README.md

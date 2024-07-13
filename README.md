@@ -21,7 +21,11 @@
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td>15/306</td> <!-- Updated dynamically by the workflow -->
+    <td>{total_exp}</td> <!-- Updated dynamically by the workflow -->
+  </tr>
+  <tr>
+    <td><strong>To Next Level:</strong></td>
+    <td>{current_exp}</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>HP:</strong></td>
