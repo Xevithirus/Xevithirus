@@ -3,6 +3,8 @@
 <!-- Profile Heading -->
 <h1 align="center"><strong><span style="color:blue">XEVITHIRUS</span></strong></h1>
 
+*****
+
 <!-- Character Stats -->
 <table align="center">
   <tr>
@@ -15,11 +17,11 @@
   </tr>
   <tr>
     <td><strong>Level:</strong></td>
-    <td>{level}</td> <!-- Updated dynamically by the workflow -->
+    <td>{{level}}</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td>{current_exp}/{required_exp} EXP</td> <!-- Updated dynamically by the workflow -->
+    <td>{current_exp}/{required_exp}</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>HP:</strong></td>

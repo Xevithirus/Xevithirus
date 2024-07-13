@@ -69,7 +69,12 @@ if response.status_code == 200:
         player = Player(total_exp=int(contribution_number))
         player.update_experience(contribution_number)
 
-        print(player)
+        #print(player) # Print Stats for testing
+
+        # Print calculated stats to stdout
+        print(player.level)
+        print(player.current_exp)
+        print(player.required_exp)
     else:
         print("Contributions data not found.")
 else:
