@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 class Player:
     def __init__(self, total_exp=0):
         self.level = 1
@@ -23,11 +22,11 @@ class Player:
     def level_up(self):
         self.level += 1
         self.prev_required_exp = self.required_exp
-        self.required_exp += self.required_exp * 0.75
+        self.required_exp += round(self.required_exp * 0.75)
         self.current_exp = 0
 
     def __str__(self):
-        return f"Level: {self.level}, Total EXP: {self.total_exp}, Current EXP: {self.current_exp}, Required EXP: {self.required_exp:.2f}"
+        return f"Level: {self.level}, Total EXP: {self.total_exp}, Current EXP: {self.current_exp}, Required EXP: {self.required_exp}"
 
 # Define the URL and parameters
 url = 'https://github.com/Xevithirus'
