@@ -88,5 +88,5 @@
   <li>Learn the basics of x86 Assembly</li>
   <li>Develop a game and upload it to Steam</li>
   <li>Write a compiler for a C-based language</li>
-  <li>(Legendary)Develop a micro-operating system from scratch</li>
+  <li>(Legendary): Develop a micro-operating system from scratch</li>
 </ul>
