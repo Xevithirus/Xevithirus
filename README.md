@@ -77,7 +77,7 @@
 <!-- Details Section -->
 <h2 align="center">Details</h2>
 <p>
-  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenge, be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--even if that means just one person's life is impoved--I will have won.
+  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is impoved--I will have won.
 </p>
 
 <!-- Quests Section -->
