@@ -75,6 +75,7 @@ if response.status_code == 200:
         print(player.level)
         print(player.current_exp)
         print(player.required_exp)
+        print(player.total_exp)
     else:
         print("Contributions data not found.")
 else:
