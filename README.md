@@ -77,15 +77,16 @@
 <!-- Details Section -->
 <h2 align="center">Details</h2>
 <p>
-  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of hurdles be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I make a lasting impact on even one soul with my software--just one life improved in some small way--I will have won.
+  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenge, be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--even if that means just one person's life is impoved--I will have won.
 </p>
 
 <!-- Quests Section -->
-<h2 align="center">Quests</h2>
+<h2 align="center">Quest Log</h2>
 <ul>
-  <li>Complete Diploma in Digital Technology Development and Design</li>
+  <li>Complete a Diploma in Digital Technology Development and Design</li>
   <li>Contribute to an Open Source Project</li>
   <li>Learn the basics of x86 Assembly</li>
-  <li>Develop a completed game in C++ and upload it to Steam</li>
-  <li>Write your own Compiler for a C based language</li>
+  <li>Develop a game and upload it to Steam</li>
+  <li>Write a compiler for a C-based language</li>
+  <li>(Legendary)Develop a micro-operating system from scratch</li>
 </ul>
