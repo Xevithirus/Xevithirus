@@ -17,7 +17,7 @@
   </tr>
   <tr>
     <td><strong>Level:</strong></td>
-    <td>{{level}}</td> <!-- Updated dynamically by the workflow -->
+    <td>{level}</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
