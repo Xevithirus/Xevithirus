@@ -1,7 +1,10 @@
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
 <h2 align="center">⚔️ Character Sheet ⚔️</h2>
 
 <!-- Profile Heading -->
-<h1 align="center"><strong><span style="color:blue">XEVITHIRUS</span></strong></h1>
+<h1 align="center" style="font-family: 'Press Start 2P', sans-serif;"><strong>XEVITHIRUS</span></strong></h1>
 
 *****
 
