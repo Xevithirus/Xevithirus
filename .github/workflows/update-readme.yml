@@ -1,6 +1,7 @@
 name: Update README daily
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "59 23 * * *"  # Runs at 23:59 UTC every day
 
