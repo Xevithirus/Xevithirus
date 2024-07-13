@@ -21,7 +21,7 @@
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td>15/306/{required_exp}</td> <!-- Updated dynamically by the workflow -->
+    <td>15/306</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>HP:</strong></td>
