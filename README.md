@@ -1,7 +1,8 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 # <h2 align="center">⚔️ Character Sheet ⚔️</h2>
 
 <!-- Profile Heading -->
-<h1 align="center"><strong><span style="color:blue">XEVITHIRUS</span></strong></h1>
+<h1 align="center" style="font-family: 'Roboto', sans-serif;><strong><span style="color:blue">XEVITHIRUS</span></strong></h1>
 
 *****
 
