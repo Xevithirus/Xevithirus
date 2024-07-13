@@ -1,6 +1,34 @@
 import requests
 from bs4 import BeautifulSoup
 
+
+class Player:
+    def __init__(self, total_exp=0):
+        self.level = 1
+        self.total_exp = total_exp
+        self.current_exp = 0
+        self.required_exp = 100
+        self.prev_required_exp = 0
+
+    def update_experience(self, new_total_exp):
+        self.total_exp = int(new_total_exp)
+        self.calculate_experience()
+
+    def calculate_experience(self):
+        while self.total_exp >= self.required_exp:
+            self.level_up()
+
+        self.current_exp = self.total_exp - self.prev_required_exp
+
+    def level_up(self):
+        self.level += 1
+        self.prev_required_exp = self.required_exp
+        self.required_exp += self.required_exp * 0.75
+        self.current_exp = 0
+
+    def __str__(self):
+        return f"Level: {self.level}, Total EXP: {self.total_exp}, Current EXP: {self.current_exp}, Required EXP: {self.required_exp:.2f}"
+
 # Define the URL and parameters
 url = 'https://github.com/Xevithirus'
 params = {
@@ -34,12 +62,18 @@ if response.status_code == 200:
     if contributions:
         # Extract the text and clean it up
         contributions_text = contributions.text.strip()
-        
+
         # Split the string and get the first part (which should be the number)
         contribution_number = contributions_text.split()[0]
-        
-        print(contribution_number)
+
+        # Initialize the player with the extracted contributions as total experience
+        player = Player(total_exp=int(contribution_number))
+        player.update_experience(contribution_number)
+
+        print(player)
     else:
         print("Contributions data not found.")
 else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
+
+
