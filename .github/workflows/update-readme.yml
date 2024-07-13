@@ -1,18 +1,16 @@
-name: Update README with Commit Experience
+name: Update README
 
 on:
-  push:
-    branches:
-      - main
   schedule:
-   # - cron: '*/10 * * * *' Runs every 10 minutes
+    - cron: "0 0 * * *" # Runs at 00:00 UTC every day
+  workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Set up Python
@@ -20,36 +18,20 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install Requests library
-        run: pip install requests
-
-      - name: Fetch Commit Data from GitHub API
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install dependencies
         run: |
-          python fetch_commits.py  # Replace with your script to fetch commits
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
 
-      - name: Calculate Experience and Level
-        id: calc
-        run: |
-          COMMITS=$(cat commits_count.txt)
-          XP=$((COMMITS * 10))
-          LEVEL=$((XP / 100))
-          echo "commits=$COMMITS" >> $GITHUB_ENV
-          echo "xp=$XP" >> $GITHUB_ENV
-          echo "level=$LEVEL" >> $GITHUB_ENV
+      - name: Run script to update README
+        run: python update_readme.py
 
-      - name: Update README
-        run: |
-          sed -i "s/Level:.*/Level: ${{ env.level }}/" README.md
-          sed -i "s/Total Experience:.*/Total Experience: ${{ env.xp }} EXP/" README.md
-          echo "Commits: ${{ steps.calc.outputs.commits }}" >> README.md
-          echo "XP: ${{ steps.calc.outputs.xp }}" >> README.md
-
-      - name: Commit Changes
+      - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
-          git commit -m "Update README with latest stats"
+          git commit -m 'Update README with latest experience data'
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
