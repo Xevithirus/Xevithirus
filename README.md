@@ -8,7 +8,7 @@
 
 *****
 
-<!-- Character Stats -->
+<!-- Character Info -->
 <table align="center">
   <tr>
     <td><strong>Class:</strong></td>
@@ -63,7 +63,7 @@
 </p>
 </h2>
 
-<!-- Attributes Section -->
+<!-- Character Stats -->
 <h2 align="center">Attributes
 <br></br>
 <p align="center">
@@ -74,8 +74,8 @@
 
 *****
 
-<!-- Details Section -->
-<h2 align="center">Details</h2>
+<!-- Character Story -->
+<h2 align="center">Character Story</h2>
 <p>
   I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is impoved--I will have won.
 </p>
@@ -90,3 +90,15 @@
   <li>Write a compiler for a C-based language</li>
   <li>(Legendary): Develop a micro-operating system from scratch</li>
 </ul>
+
+<!-- Easter Eggs -->
+<h2 align="center">Easter Eggs</h2>
+<p>
+  You probably weren't wondering where I get the numbers for my Character Info. Well let me tell you anyways.
+</p>
+<p>
+  The current Level, Total Exp and To Next Level info is based off my Github's current total contributions. Each day, a script scrapes the header from my contribution calendar for the current amount, then uses that number for my Total Exp. With that total, I can calculate my Current Exp, Exp Required until Next Level, and my Level itself. I then output those values and run them through another script to update the Readme file. All that is left is to set that process to a Github Workflow to run it once a day and boom, my Github Profile now has a dynamic experience calculator.
+</p>
+<p>
+  Why all this trouble for a few numbers? Because seeing my real-life progress play out like a videogame is worth it.
+</p>
