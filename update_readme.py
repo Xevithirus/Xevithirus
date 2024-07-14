@@ -19,10 +19,10 @@ if result.returncode == 0:
     with open('README.md', 'r') as file:
         readme_content = file.read()
 
-    # Update the placeholders in README.md with the calculated values
-    readme_content = re.sub(r'{level}', str(level), readme_content)
-    readme_content = re.sub(r'{total_exp}', str(total_exp), readme_content)
-    readme_content = re.sub(r'{current_exp}', f'{current_exp}/{required_exp}', readme_content)
+    # Update the existing values in README.md with the new calculated values
+    readme_content = re.sub(r'(?<=<td><strong>Level:</strong></td>\s*<td>)[0-9]+', str(level), readme_content)
+    readme_content = re.sub(r'(?<=<td><strong>Total Experience:</strong></td>\s*<td>)[0-9]+', str(total_exp), readme_content)
+    readme_content = re.sub(r'(?<=<td><strong>To Next Level:</strong></td>\s*<td>)[0-9]+/[0-9]+', f'{current_exp}/{required_exp}', readme_content)
 
     # Write the updated content back to README.md
     with open('README.md', 'w') as file:
