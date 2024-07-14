@@ -97,7 +97,7 @@
   You probably weren't wondering where I get the numbers for my Character Info. Well let me tell you anyways.
 </p>
 <p>
-  The current Level, Total Exp and To Next Level info is based off my Github's current total contributions. Each day, a script scrapes the header from my contribution calendar for the current amount, then uses that number for my Total Exp. With that total, I can calculate my Current Exp, Exp Required until Next Level, and my Level itself. I then output those values and run them through another script to update the Readme file. All that is left is to set that process to a Github Workflow to run it once a day and boom, my Github Profile now has a dynamic experience calculator.
+  The current Level, Total Exp and To Next Level info is based off my Github's current total contributions. Each day, a script scrapes the header from my contribution calendar for the current amount, then uses that number for my Total Exp. With that total, I can calculate my Current Exp, Exp Required until Next Level, and my Level itself. I then output those values and run them through another script to update the Readme file. Lastly, I set that process to a Github Workflow to run it once a day and boom, my Github Profile now has a dynamic experience calculator.
 </p>
 <p>
   Why all this trouble for a few numbers? Because seeing my real-life progress play out like a videogame is worth it.
