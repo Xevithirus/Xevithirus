@@ -20,15 +20,15 @@
   </tr>
   <tr>
     <td><strong>Level:</strong></td>
-    <td>3</td> <!-- Updated dynamically by the workflow -->
+    <td>{level}</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td>195</td> <!-- Updated dynamically by the workflow -->
+    <td>{total_exp}</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>To Next Level:</strong></td>
-    <td>20/306</td> <!-- Updated dynamically by the workflow -->
+    <td>{current_exp}</td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>HP:</strong></td>
