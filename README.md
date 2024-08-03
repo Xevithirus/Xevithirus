@@ -24,11 +24,11 @@
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td><!--total_exp-->236<!--/total_exp--></td> <!-- Updated dynamically by the workflow -->
+    <td><!--total_exp-->240<!--/total_exp--></td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>To Next Level:</strong></td>
-    <td><!--to_next_level-->61/306<!--/to_next_level--></td> <!-- Updated dynamically by the workflow -->
+    <td><!--to_next_level-->65/306<!--/to_next_level--></td> <!-- Updated dynamically by the workflow -->
   </tr>
   <tr>
     <td><strong>HP:</strong></td>
