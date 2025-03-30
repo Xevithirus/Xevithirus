@@ -8,30 +8,44 @@
 *****
 
 <!-- Character Info -->
-<table align="center">
-  <tr>
-    <td><strong>Class:</strong></td>
-    <td>Bit Basher</td>
-  </tr>
-  <tr>
-    <td><strong>Specialization:</strong></td>
-    <td>Full-Stack Developer</td>
-  </tr>
-  <tr>
-    <td><strong>Level:</strong></td>
-    <td><!--level-->3<!--/level--></td>
-  </tr>
-  <tr>
-    <td><strong>Total Experience:</strong></td>
-    <td><!--total_exp-->284<!--/total_exp--></td>
-  </tr>
-  <tr>
-    <td><strong>To Next Level:</strong></td>
-    <td><!--to_next_level-->109/306<!--/to_next_level--></td>
-  </tr>
-  <tr>
-    <td><strong>HP:</strong></td>
-    <td>❤❤❤🤍🤍</td>
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+<tr>
+<!-- Image on the left -->
+<td style="vertical-align:top; padding-right:20px;">
+  <img src="./images/profile-pic.png"
+      alt="Character Portrait"
+      style="width:160px; height:auto;" />
+  </td>
+
+<!-- Character Info on the right -->
+<td>
+  <table>
+    <tr>
+      <td><strong>Class:</strong></td>
+      <td>Bit Basher</td>
+    </tr>
+    <tr>
+      <td><strong>Specialization:</strong></td>
+      <td>Full-Stack Developer</td>      
+    </tr>
+      <tr>
+        <td><strong>Level:</strong></td>
+        <td><!--level-->3<!--/level--></td>
+      </tr>
+      <tr>
+        <td><strong>Total Experience:</strong></td>
+        <td><!--total_exp-->284<!--/total_exp--></td>
+      </tr>
+      <tr>
+        <td><strong>To Next Level:</strong></td>
+        <td><!--to_next_level-->109/306<!--/to_next_level--></td>
+      </tr>
+      <tr>
+        <td><strong>HP:</strong></td>
+        <td>❤❤❤🤍🤍</td>
+      </tr>
+      </table>
+    </td>
   </tr>
 </table>
 
