@@ -34,11 +34,11 @@
       </tr>
       <tr>
         <td><strong>Total Experience:</strong></td>
-        <td><!--total_exp-->284<!--/total_exp--></td>
+        <td><!--total_exp-->291<!--/total_exp--></td>
       </tr>
       <tr>
         <td><strong>To Next Level:</strong></td>
-        <td><!--to_next_level-->109/306<!--/to_next_level--></td>
+        <td><!--to_next_level-->116/306<!--/to_next_level--></td>
       </tr>
       <tr>
         <td><strong>HP:</strong></td>
