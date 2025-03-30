@@ -81,22 +81,22 @@
 </p>
 
 <!-- Inventory -->
-<h2 align="center">🎒 Inventory</h2>
+<h2 align="center">Inventory</h2>
 
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
+  <tr>
   <!-- Slot 1 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
-      title="Name: Coffee&#10;Description: Boosts coding energy and reduces sleepiness debuff. Must be replenished often.&#10;Type: Consumable&#10;Qty: 8">
+    title="Name: Coffee&#10;Description: Boosts coding energy and reduces sleepiness debuff. Must be replenished often.&#10;Type: Consumable&#10;Qty: 8">
     <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
       <div style="font-size:36px; line-height:1;">☕</div>
       <sub></sub>
     </div>
   </td>
-
+    
   <!-- Slot 2 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
-      title="Name: Mech. Keyboard&#10;Description: +10 typing speed. Clicks like thunder.&#10;Type: Equippable&#10;Qty: 1">
+    title="Name: Mech. Keyboard&#10;Description: +10 typing speed. Clicks like thunder.&#10;Type: Equippable&#10;Qty: 1">
     <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
       <div style="font-size:36px; line-height:1;">⌨️</div>
       <sub></sub>
@@ -115,8 +115,8 @@
   <!-- Slot 4 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
       title="Name: Head-phones&#10;Description: Blocks distractions. Deep work enchantment +1.&#10;Type: Equippable&#10;Qty: 1">
-    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
-      <div style="font-size:36px; line-height:1;">🎧</div>
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+        <div style="font-size:36px; line-height:1;">🎧</div>
       <sub></sub>
     </div>
   </td>
@@ -138,10 +138,12 @@
       <sub></sub>
     </div>
   </td>
-
+ </tr>
+ <tr>
+   
   <!-- Slot 7 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
-      title="Name: Ergo Chair&#10;Description: +10 Posture. Prevents lower back curse.&#10;Type: Equippable&#10;Qty: 1">
+    title="Name: Ergo Chair&#10;Description: +10 Posture. Prevents lower back curse.&#10;Type: Equippable&#10;Qty: 1">
     <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
       <div style="font-size:36px; line-height:1;">🪑</div>
       <sub></sub>
@@ -150,55 +152,56 @@
 
   <!-- Slot 8 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
-      title="Name: Comfy Socks&#10;Description: +5 to Comfort. Keeps feet warm, ideas flowing.&#10;Type: Equippable&#10;Qty: 1">
+    title="Name: Comfy Socks&#10;Description: +5 to Comfort. Keeps feet warm, ideas flowing.&#10;Type: Equippable&#10;Qty: 1">
     <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
       <div style="font-size:36px; line-height:1;">🧦</div>
       <sub></sub>
     </div>
-  </td>
+    </td>
 
   <!-- Slot 9 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
-      title="Name: Energy Drink&#10;Description: +20 Speed. May trigger Debug Frenzy.&#10;Type: Consumable&#10;Qty: 1">
-    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
-      <div style="font-size:36px; line-height:1;">🔋</div>
-      <sub></sub>
-    </div>
-  </td>
+        title="Name: Energy Drink&#10;Description: +20 Speed. May trigger Debug Frenzy.&#10;Type: Consumable&#10;Qty: 1">
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+        <div style="font-size:36px; line-height:1;">🔋</div>
+        <sub></sub>
+      </div>
+    </td>
 
   <!-- Slot 10 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
-      title="Name: Empty Slot&#10;Description: None">
-    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
-      <div style="font-size:36px; line-height:1;">⬜</div>
-      <sub></sub>
-    </div>
-  </td>
+        title="Name: Empty Slot&#10;Description: None">
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+        <div style="font-size:36px; line-height:1;">⬜</div>
+        <sub></sub>
+      </div>
+    </td>
 
   <!-- Slot 11 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
-      title="Name: Empty Slot&#10;Description: None">
-    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
-      <div style="font-size:36px; line-height:1;">⬜</div>
-      <sub></sub>
-    </div>
-  </td>
+        title="Name: Empty Slot&#10;Description: None">
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+        <div style="font-size:36px; line-height:1;">⬜</div>
+        <sub></sub>
+      </div>
+    </td>
 
   <!-- Slot 12 -->
   <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
-      title="Name: Empty Slot&#10;Description: None">
-    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
-      <div style="font-size:36px; line-height:1;">⬜</div>
-      <sub></sub>
-    </div>
-  </td>
-</tr>
+        title="Name: Empty Slot&#10;Description: None">
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+        <div style="font-size:36px; line-height:1;">⬜</div>
+        <sub></sub>
+      </div>
+    </td>
+  </tr>
 </table>
+<p align="center""><em>Hover for details</em></p>
 
 *****
 
 <!-- Character Story -->
-<h2 align="center">Character Story</h2>
+<h2 align="center"; fon>Character Story</h2>
 <p>
   I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is improved--I will have won.
 </p>
