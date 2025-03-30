@@ -1,10 +1,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-
 <h2 align="center">⚔️ Character Sheet ⚔️</h2>
 
 <!-- Profile Heading -->
-<h1 align="center" style="font-family: 'Press Start 2P', sans-serif;"><strong>XEVITHIRUS</span></strong></h1>
+<h1 align="center" style="font-family: 'Press Start 2P', sans-serif;"><strong>XEVITHIRUS</strong></h1>
 
 *****
 
@@ -20,15 +19,15 @@
   </tr>
   <tr>
     <td><strong>Level:</strong></td>
-    <td><!--level-->3<!--/level--></td> <!-- Updated dynamically by the workflow -->
+    <td><!--level-->3<!--/level--></td>
   </tr>
   <tr>
     <td><strong>Total Experience:</strong></td>
-    <td><!--total_exp-->284<!--/total_exp--></td> <!-- Updated dynamically by the workflow -->
+    <td><!--total_exp-->284<!--/total_exp--></td>
   </tr>
   <tr>
     <td><strong>To Next Level:</strong></td>
-    <td><!--to_next_level-->109/306<!--/to_next_level--></td> <!-- Updated dynamically by the workflow -->
+    <td><!--to_next_level-->109/306<!--/to_next_level--></td>
   </tr>
   <tr>
     <td><strong>HP:</strong></td>
@@ -37,8 +36,7 @@
 </table>
 
 <!-- Abilities Section -->
-<h2 align="center">Abilities 
-<br></br>
+<h2 align="center">Abilities</h2>
 <p align="center">
   <img alt="C++" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
   <img alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
@@ -61,38 +59,149 @@
   <img alt="Vite" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
   <img alt="Vim" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" />
 </p>
-</h2>
 
-<!-- Character Stats -->
-<h2 align="center">Attributes
-<br></br>
+<!-- Attributes -->
+<h2 align="center">Attributes</h2>
 <p align="center">
-  <!-- GitHub Readme Stats -->
   <img src="https://github-readme-stats.vercel.app/api?username=xevithirus&show_icons=true&theme=tokyonight" alt="GitHub Stats">
 </p>
-</h2>
+
+<!-- Inventory -->
+<h2 align="center">🎒 Inventory</h2>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+<tr>
+  <!-- Slot 1 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Coffee&#10;Description: Boosts coding energy and reduces sleepiness debuff. Must be replenished often.&#10;Type: Consumable&#10;Qty: 8">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">☕</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 2 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Mech. Keyboard&#10;Description: +10 typing speed. Clicks like thunder.&#10;Type: Equippable&#10;Qty: 1">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">⌨️</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 3 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Ultrawide Monitor&#10;Description: Multi-task like a beast. Boosts IDE vision range.&#10;Type: Equippable&#10;Qty: 1">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">🖥️</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 4 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Head-phones&#10;Description: Blocks distractions. Deep work enchantment +1.&#10;Type: Equippable&#10;Qty: 1">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">🎧</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 5 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Blue-light Glasses&#10;Description: Prevents screen-burn. Adds +3 Eye Comfort.&#10;Type: Equippable&#10;Qty: 1">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">👓</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 6 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Instant Ramen&#10;Description: Restores HP and morale. Cheap, quick, essential.&#10;Type: Consumable&#10;Qty: 2">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">🍜</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 7 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Ergo Chair&#10;Description: +10 Posture. Prevents lower back curse.&#10;Type: Equippable&#10;Qty: 1">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">🪑</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 8 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Comfy Socks&#10;Description: +5 to Comfort. Keeps feet warm, ideas flowing.&#10;Type: Equippable&#10;Qty: 1">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">🧦</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 9 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Energy Drink&#10;Description: +20 Speed. May trigger Debug Frenzy.&#10;Type: Consumable&#10;Qty: 1">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">🔋</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 10 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Empty Slot&#10;Description: None">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">⬜</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 11 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Empty Slot&#10;Description: None">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">⬜</div>
+      <sub></sub>
+    </div>
+  </td>
+
+  <!-- Slot 12 -->
+  <td style="width:80px; height:80px; border:1px solid #555; background-color:#222; vertical-align:middle;"
+      title="Name: Empty Slot&#10;Description: None">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:80px; height:80px;">
+      <div style="font-size:36px; line-height:1;">⬜</div>
+      <sub></sub>
+    </div>
+  </td>
+</tr>
+</table>
 
 *****
 
 <!-- Character Story -->
 <h2 align="center">Character Story</h2>
 <p>
-  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is impoved--I will have won.
+  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is improved--I will have won.
 </p>
 
-<!-- Quests Section -->
-<h2 align="center">Quest Log</h2>
+<!-- Quest Log -->
+<h2 align="center">📜 Quest Log</h2>
 <ul>
   <li>Complete a Diploma in Digital Technology Development and Design</li>
   <li>Contribute to an Open Source Project</li>
   <li>Learn the basics of x86 Assembly</li>
   <li>Develop a game and upload it to Steam</li>
-  <li>(Epic): Write a compiler for a C-based language</li>
-  <li>(Legendary): Develop a micro-operating system from scratch</li>
+  <li><strong>(Epic)</strong>: Write a compiler for a C-based language</li>
+  <li><strong>(Legendary)</strong>: Develop a micro-operating system from scratch</li>
 </ul>
 
 <!-- Easter Eggs -->
-<h2 align="center">Easter Eggs</h2>
+<h2 align="center">🎲 Easter Eggs</h2>
 <p>
   You probably weren't wondering where I get the numbers for my Character Info. Well let me tell you anyways.
 </p>
