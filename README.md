@@ -1,11 +1,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-<h2 align="center">⚔️ Character Sheet ⚔️</h2>
-
+<p align="center">⚔️ Character Sheet ⚔️</p>
 <!-- Profile Heading -->
 <h1 align="center" style="font-family: 'Press Start 2P', sans-serif;"><strong>XEVITHIRUS</strong></h1>
-
-*****
 
 <!-- Character Info -->
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
@@ -49,6 +46,14 @@
   </tr>
 </table>
 
+---
+<!-- Attributes -->
+<h2 align="center">🧮 Attributes</h2>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=xevithirus&show_icons=true&theme=tokyonight" alt="GitHub Stats">
+</p>
+
+---
 <!-- Abilities Section -->
 <h2 align="center">☄️ Abilities</h2>
 <p align="center">
@@ -74,12 +79,7 @@
   <img alt="Vim" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" />
 </p>
 
-<!-- Attributes -->
-<h2 align="center">🧮 Attributes</h2>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=xevithirus&show_icons=true&theme=tokyonight" alt="GitHub Stats">
-</p>
-
+---
 <!-- Inventory -->
 <h2 align="center">💰 Inventory</h2>
 
@@ -198,14 +198,14 @@
 </table>
 <p align="center""><em>Hover for details</em></p>
 
-*****
-
+---
 <!-- Character Story -->
 <h2 align="center"; fon>📖 Lore</h2>
 <p>
   I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is improved--I will have won.
 </p>
 
+---
 <!-- Quest Log -->
 <h2 align="center">📜 Quest Log</h2>
 <ul>
@@ -217,6 +217,7 @@
   <li><strong>(Legendary)</strong>: Develop a micro-operating system from scratch</li>
 </ul>
 
+---
 <!-- Easter Eggs -->
 <h2 align="center">🥚 Easter Eggs</h2>
 <p>
