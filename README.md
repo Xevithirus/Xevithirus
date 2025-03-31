@@ -50,7 +50,7 @@
 </table>
 
 <!-- Abilities Section -->
-<h2 align="center">Abilities</h2>
+<h2 align="center">☄️ Abilities</h2>
 <p align="center">
   <img alt="C++" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
   <img alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
@@ -75,13 +75,13 @@
 </p>
 
 <!-- Attributes -->
-<h2 align="center">Attributes</h2>
+<h2 align="center">🧮 Attributes</h2>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=xevithirus&show_icons=true&theme=tokyonight" alt="GitHub Stats">
 </p>
 
 <!-- Inventory -->
-<h2 align="center">Inventory</h2>
+<h2 align="center">💰 Inventory</h2>
 
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
   <tr>
@@ -201,7 +201,7 @@
 *****
 
 <!-- Character Story -->
-<h2 align="center"; fon>Character Story</h2>
+<h2 align="center"; fon>📖 Lore</h2>
 <p>
   I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is improved--I will have won.
 </p>
@@ -218,7 +218,7 @@
 </ul>
 
 <!-- Easter Eggs -->
-<h2 align="center">🎲 Easter Eggs</h2>
+<h2 align="center">🥚 Easter Eggs</h2>
 <p>
   You probably weren't wondering where I get the numbers for my Character Info. Well let me tell you anyways.
 </p>
