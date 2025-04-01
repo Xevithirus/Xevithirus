@@ -1,5 +1,19 @@
 import requests
 from bs4 import BeautifulSoup
+import json
+import os
+
+EXP_FILE_PATH = 'total_exp.json'
+
+def load_saved_exp():
+    if os.path.exists(EXP_FILE_PATH):
+        with open(EXP_FILE_PATH, 'r') as f:
+            return json.load(f).get('total_exp', 0)
+    return 0
+
+def save_total_exp(exp):
+    with open(EXP_FILE_PATH, 'w') as f:
+        json.dump({"total_exp": exp}, f)
 
 class Player:
     def __init__(self, total_exp=0):
@@ -65,9 +79,25 @@ if response.status_code == 200:
         # Split the string and get the first part (which should be the number)
         contribution_number = contributions_text.split()[0]
 
-        # Initialize the player with the extracted contributions as total experience
-        player = Player(total_exp=int(contribution_number))
-        player.update_experience(contribution_number)
+        # Convert extracted contribution string to int
+        contribution_number = int(contribution_number)
+
+        # Load saved EXP from file
+        saved_total_exp = load_saved_exp()
+
+        # If the GitHub number reset, assume it's a new year and just add the new number
+        if contribution_number < saved_total_exp:
+            exp_to_add = contribution_number
+        else:
+            exp_to_add = contribution_number - saved_total_exp
+
+        # Update and save the new running total EXP
+        new_total_exp = saved_total_exp + exp_to_add
+        save_total_exp(new_total_exp)
+
+        # Initialize and update player with new total
+        player = Player(total_exp=new_total_exp)
+        player.update_experience(new_total_exp)
 
         #print(player) # Print Stats for testing
 
