@@ -4,6 +4,7 @@ import json
 import os
 
 EXP_FILE_PATH = 'total_exp.json'
+BACKUP_EXP_FILE_PATH = 'total_exp_backup.json'
 
 def load_saved_exp():
     if os.path.exists(EXP_FILE_PATH):
@@ -14,6 +15,10 @@ def load_saved_exp():
 def save_total_exp(exp):
     with open(EXP_FILE_PATH, 'w') as f:
         json.dump({"total_exp": exp}, f)
+
+def backup_exp(exp):
+    with open(BACKUP_EXP_FILE_PATH, 'w') as f:
+        json.dump({"backup_exp": exp}, f)
 
 class Player:
     def __init__(self, total_exp=0):
@@ -85,11 +90,19 @@ if response.status_code == 200:
         # Load saved EXP from file
         saved_total_exp = load_saved_exp()
 
+        # Backup the previous EXP value
+        backup_exp(saved_total_exp)
+
         # If the GitHub number reset, assume it's a new year and just add the new number
         if contribution_number < saved_total_exp:
             exp_to_add = contribution_number
         else:
             exp_to_add = contribution_number - saved_total_exp
+
+        # Guard against negative values
+        if exp_to_add < 0:
+            print("Warning: Negative EXP delta detected. No EXP will be added.")
+            exp_to_add = 0
 
         # Update and save the new running total EXP
         new_total_exp = saved_total_exp + exp_to_add
@@ -98,8 +111,6 @@ if response.status_code == 200:
         # Initialize and update player with new total
         player = Player(total_exp=new_total_exp)
         player.update_experience(new_total_exp)
-
-        #print(player) # Print Stats for testing
 
         # Print calculated stats to stdout
         print(player.level)
@@ -110,5 +121,3 @@ if response.status_code == 200:
         print("Contributions data not found.")
 else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
-
-
