@@ -196,11 +196,11 @@
     </td>
   </tr>
 </table>
-<p align="center""><em>Hover for details</em></p>
+<p align="center"><em>Hover for details</em></p>
 
 ---
 <!-- Character Story -->
-<h2 align="center"; fon>📖 Lore</h2>
+<h2 align="center">📖 Lore</h2>
 <p>
   I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is improved--I will have won.
 </p>
