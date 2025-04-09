@@ -27,15 +27,15 @@
     </tr>
       <tr>
         <td><strong>Level:</strong></td>
-        <td><!--level-->6<!--/level--></td>
+        <td><!--level-->7<!--/level--></td>
       </tr>
       <tr>
         <td><strong>Total Experience:</strong></td>
-        <td><!--total_exp-->1526<!--/total_exp--></td>
+        <td><!--total_exp-->2136<!--/total_exp--></td>
       </tr>
       <tr>
         <td><strong>To Next Level:</strong></td>
-        <td><!--to_next_level-->588/1642<!--/to_next_level--></td>
+        <td><!--to_next_level-->494/2874<!--/to_next_level--></td>
       </tr>
       <tr>
         <td><strong>HP:</strong></td>
