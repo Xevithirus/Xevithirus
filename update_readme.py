@@ -9,8 +9,13 @@ result = subprocess.run(['python', 'github-contributions-calculator.py'], captur
 
 # Abort immediately if the scraper itself failed
 if result.returncode != 0:
+    if "Contributions data not found." in result.stdout:
+        print("No contribution heading today — README left unchanged.")
+        sys.exit(0)          # <- Success for the workflow
+
+    # Any other error is still fatal
     print("Failed to run github-contributions-calculator.py")
-    print("Stdout:\n",  result.stdout) 
+    print("Stdout:\n",  result.stdout)
     print("Stderr:\n", result.stderr)
     sys.exit(1)
 
