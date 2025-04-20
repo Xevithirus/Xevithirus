@@ -10,7 +10,8 @@ result = subprocess.run(['python', 'github-contributions-calculator.py'], captur
 # Abort immediately if the scraper itself failed
 if result.returncode != 0:
     print("Failed to run github-contributions-calculator.py")
-    print("Error output:\n", result.stderr)
+    print("Stdout:\n",  result.stdout) 
+    print("Stderr:\n", result.stderr)
     sys.exit(1)
 
 # Check if github-contributions-calculator.py executed successfully
