@@ -7,10 +7,23 @@ import sys
 # Run github-contributions-calculator.py and capture its output
 result = subprocess.run(['python', 'github-contributions-calculator.py'], capture_output=True, text=True)
 
+# Abort immediately if the scraper itself failed
+if result.returncode != 0:
+    print("Failed to run github-contributions-calculator.py")
+    print("Error output:\n", result.stderr)
+    sys.exit(1)
+
 # Check if github-contributions-calculator.py executed successfully
 if result.returncode == 0:
     # Split captured output into lines and parse values
     output_lines = result.stdout.strip().split('\n')
+
+    # validate that the lines are numeric
+    if len(output_lines) < 4 or not all(line.strip().isdigit()
+                                        for line in output_lines[:4]):
+    print("Unexpected scraper output:\n", result.stdout)
+    sys.exit(1)
+                                            
     level = int(output_lines[0])
     current_exp = int(output_lines[1])
     required_exp = int(output_lines[2])
