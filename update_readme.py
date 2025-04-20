@@ -2,6 +2,7 @@
 
 import re
 import subprocess
+import sys
 
 # Run github-contributions-calculator.py and capture its output
 result = subprocess.run(['python', 'github-contributions-calculator.py'], capture_output=True, text=True)
@@ -32,3 +33,5 @@ if result.returncode == 0:
     print("README.md updated successfully.")
 else:
     print("Failed to run github-contributions-calculator.py.")
+    print("Error output:\n", result.stderr)
+    sys.exit(1)
