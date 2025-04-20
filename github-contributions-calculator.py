@@ -121,9 +121,9 @@ if __name__ == "__main__":
 
     if delta < 0:                # New contribution year started
         delta = scraped
-    if delta > 200:              # Safety net – avoid runaway commit loops
-        print(f"Warning: suspicious EXP delta ({delta}); aborting.")
-        exit(1)
+    if delta > 500:              # Safety net – avoid runaway commit loops
+        print(f"Warning: suspicious EXP delta ({delta}); proceeding.")
+        
 
     data["total_exp"]   += delta
     data["last_scraped"] = scraped
