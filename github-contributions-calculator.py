@@ -96,7 +96,9 @@ if response.status_code == 200:
 
         new_total_exp = saved_total_exp + exp_to_add
         save_total_exp(new_total_exp)
-        backup_exp(new_total_exp)
+        
+        if 0 <= exp_to_add <= 200:
+            backup_exp(new_total_exp)
 
         player = Player(total_exp=new_total_exp)
         player.update_experience(new_total_exp)
