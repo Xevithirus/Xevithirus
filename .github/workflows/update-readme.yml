@@ -18,7 +18,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-          cache: 'pip'
+          cache: 'pip'                    # enable built‑in pip caching
+          cache-dependency-path: requirements.txt
+
+      - run: pip install -r requirements.txt
 
       - run: pip install requests beautifulsoup4
 
