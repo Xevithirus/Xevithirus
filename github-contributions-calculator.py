@@ -2,9 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import os
+from datetime import datetime
 
 EXP_FILE_PATH = 'total_exp.json'
 BACKUP_EXP_FILE_PATH = 'total_exp_backup.json'
+LOG_FILE_PATH = 'log.txt'
 
 def load_saved_exp():
     if os.path.exists(EXP_FILE_PATH):
@@ -35,7 +37,6 @@ class Player:
     def calculate_experience(self):
         while self.total_exp >= self.required_exp:
             self.level_up()
-
         self.current_exp = self.total_exp - self.prev_required_exp
 
     def level_up(self):
@@ -47,16 +48,8 @@ class Player:
     def __str__(self):
         return f"Level: {self.level}, Total EXP: {self.total_exp}, Current EXP: {self.current_exp}, Required EXP: {self.required_exp}"
 
-# Define the URL and parameters
+# Define the URL and headers
 url = 'https://github.com/Xevithirus'
-params = {
-    'action': 'show',
-    'controller': 'profiles',
-    'tab': 'contributions',
-    'user_id': 'Xevithirus'
-}
-
-# Define the headers
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
     'Accept-Language': 'en-US,en;q=0.9',
@@ -67,52 +60,47 @@ headers = {
 }
 
 # Send the GET request
-response = requests.get(url, headers=headers, params=params)
+response = requests.get(url, headers=headers)
 
 # Check if the request was successful
 if response.status_code == 200:
-    # Parse the HTML content
     soup = BeautifulSoup(response.text, 'html.parser')
-    
-    # Find the element containing the contributions
     contributions = soup.find('h2', class_='f4 text-normal mb-2')
-    
+
     if contributions:
-        # Extract the text and clean it up
         contributions_text = contributions.text.strip()
+        try:
+            contribution_number = int(contributions_text.split()[0])
+        except (IndexError, ValueError):
+            print("Error: Unable to parse contribution number.")
+            exit(1)
 
-        # Split the string and get the first part (which should be the number)
-        contribution_number = contributions_text.split()[0]
+        # Log the current contribution number
+        with open(LOG_FILE_PATH, 'a') as log_file:
+            log_file.write(f"{datetime.utcnow().isoformat()} - Scraped Contribution Count: {contribution_number}\n")
 
-        # Convert extracted contribution string to int
-        contribution_number = int(contribution_number)
-
-        # Load saved EXP from file
         saved_total_exp = load_saved_exp()
+        today = datetime.utcnow()
 
-        # If the GitHub number reset, assume it's a new year and just add the new number
-        if contribution_number < saved_total_exp:
+        if today.month == 1 and contribution_number < saved_total_exp:
             exp_to_add = contribution_number
         else:
             exp_to_add = contribution_number - saved_total_exp
 
-        # Guard against negative values
         if exp_to_add < 0:
             print("Warning: Negative EXP delta detected. No EXP will be added.")
             exp_to_add = 0
+        elif exp_to_add > 200:
+            print(f"Warning: Suspiciously high EXP delta ({exp_to_add}) detected. Aborting update.")
+            exit(1)
 
-        # Update and save the new running total EXP
         new_total_exp = saved_total_exp + exp_to_add
         save_total_exp(new_total_exp)
-
-        # ✅ Sync the backup with the new total EXP
         backup_exp(new_total_exp)
 
-        # Initialize and update player with new total
         player = Player(total_exp=new_total_exp)
         player.update_experience(new_total_exp)
 
-        # Print calculated stats to stdout
         print(player.level)
         print(player.current_exp)
         print(player.required_exp)
