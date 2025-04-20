@@ -50,34 +50,52 @@ class Player:
         return (f"Level: {self.level}, Total EXP: {self.total_exp}, "
                 f"Current EXP: {self.current_exp}, Required EXP: {self.required_exp}")
 
+# -----------------------------------------------------------
 # Request headers (add cookie only if provided by env)
-url = 'https://github.com/Xevithirus'
+# -----------------------------------------------------------
+username = "Xevithirus"
+url       = f"https://github.com/{username}"
+alt_url   = f"https://github.com/users/{username}/contributions"   # fallback page
+
 headers = {
     'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
                    'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'),
     'Accept-Language': 'en-US,en;q=0.9',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Referer': 'https://github.com/Xevithirus',
+    'Referer': url,
     'X-Requested-With': 'XMLHttpRequest',
 }
-cookie_env = os.getenv("COOKIE")           # <- NEW
-if cookie_env:                             # <- NEW
-    headers['Cookie'] = cookie_env         # <- NEW
+cookie_env = os.getenv("COOKIE")
+if cookie_env:
+    headers['Cookie'] = cookie_env
 
+# -----------------------------------------------------------
+# Try profile page first
+# -----------------------------------------------------------
 response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
     soup = BeautifulSoup(response.text, 'html.parser')
     contributions = soup.find(
         'h2',
-        string=re.compile(r'\d[\d,]* contribution[s]?', flags=re.I)  # plural **or** singular
+        string=re.compile(r'\d[\d,]* contribution[s]?', flags=re.I)
     )
+
+    # ----------------- Fallback to contributions page -----------------
+    if contributions is None:
+        alt_resp = requests.get(alt_url, headers=headers)
+        if alt_resp.status_code == 200:
+            alt_soup = BeautifulSoup(alt_resp.text, 'html.parser')
+            contributions = alt_soup.find(
+                'h2',
+                string=re.compile(r'\d[\d,]* contribution[s]?', flags=re.I)
+            )
+    # -----------------------------------------------------------------
 
     if contributions:
         contributions_text = contributions.text.strip()
         try:
-            # remove commas before converting to int  <-- NEW
-            raw = contributions_text.split()[0].replace(',', '')
+            raw = contributions_text.split()[0].replace(',', '')  # remove commas
             contribution_number = int(raw)
         except (IndexError, ValueError):
             print("Error: Unable to parse contribution number.")
@@ -117,8 +135,7 @@ if response.status_code == 200:
         print(player.total_exp)
     else:
         print("Contributions data not found.")
-        exit(1) 
+        exit(1)
 else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
     exit(1)
-
