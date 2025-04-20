@@ -21,8 +21,8 @@ if result.returncode == 0:
     # validate that the lines are numeric
     if len(output_lines) < 4 or not all(line.strip().isdigit()
                                         for line in output_lines[:4]):
-    print("Unexpected scraper output:\n", result.stdout)
-    sys.exit(1)
+        print("Unexpected scraper output:\n", result.stdout)
+        sys.exit(1)
                                             
     level = int(output_lines[0])
     current_exp = int(output_lines[1])
