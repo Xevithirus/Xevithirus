@@ -68,7 +68,10 @@ response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
     soup = BeautifulSoup(response.text, 'html.parser')
-    contributions = soup.find('h2', string=re.compile(r'\d[\d,]* contributions', flags=re.I))
+    contributions = soup.find(
+        'h2',
+        string=re.compile(r'\d[\d,]* contribution[s]?', flags=re.I)  # plural **or** singular
+    )
 
     if contributions:
         contributions_text = contributions.text.strip()
