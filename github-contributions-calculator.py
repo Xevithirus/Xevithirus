@@ -50,7 +50,7 @@ class Player:
         return (f"Level: {self.level}, Total EXP: {self.total_exp}, "
                 f"Current EXP: {self.current_exp}, Required EXP: {self.required_exp}")
 
-# Define the URL and headers
+# Request headers (add cookie only if provided by env)
 url = 'https://github.com/Xevithirus'
 headers = {
     'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
@@ -59,13 +59,13 @@ headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Referer': 'https://github.com/Xevithirus',
     'X-Requested-With': 'XMLHttpRequest',
-    'Cookie': '<Your-Cookie-Header-Value>'
 }
+cookie_env = os.getenv("COOKIE")           # <- NEW
+if cookie_env:                             # <- NEW
+    headers['Cookie'] = cookie_env         # <- NEW
 
-# Send the GET request
 response = requests.get(url, headers=headers)
 
-# Check if the request was successful
 if response.status_code == 200:
     soup = BeautifulSoup(response.text, 'html.parser')
     contributions = soup.find('h2', string=re.compile(r'\d[\d,]* contributions', flags=re.I))
@@ -73,7 +73,9 @@ if response.status_code == 200:
     if contributions:
         contributions_text = contributions.text.strip()
         try:
-            contribution_number = int(contributions_text.split()[0])
+            # remove commas before converting to int  <-- NEW
+            raw = contributions_text.split()[0].replace(',', '')
+            contribution_number = int(raw)
         except (IndexError, ValueError):
             print("Error: Unable to parse contribution number.")
             exit(1)
@@ -115,4 +117,5 @@ if response.status_code == 200:
         exit(1) 
 else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
-    exit(1) 
+    exit(1)
+
