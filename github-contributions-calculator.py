@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime
+import re    
 
 EXP_FILE_PATH = 'total_exp.json'
 BACKUP_EXP_FILE_PATH = 'total_exp_backup.json'
@@ -46,12 +47,14 @@ class Player:
         self.current_exp = 0
 
     def __str__(self):
-        return f"Level: {self.level}, Total EXP: {self.total_exp}, Current EXP: {self.current_exp}, Required EXP: {self.required_exp}"
+        return (f"Level: {self.level}, Total EXP: {self.total_exp}, "
+                f"Current EXP: {self.current_exp}, Required EXP: {self.required_exp}")
 
 # Define the URL and headers
 url = 'https://github.com/Xevithirus'
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+    'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                   'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'),
     'Accept-Language': 'en-US,en;q=0.9',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Referer': 'https://github.com/Xevithirus',
@@ -65,7 +68,7 @@ response = requests.get(url, headers=headers)
 # Check if the request was successful
 if response.status_code == 200:
     soup = BeautifulSoup(response.text, 'html.parser')
-    contributions = soup.find('h2', class_='f4 text-normal mb-2')
+    contributions = soup.find('h2', string=re.compile(r'\d[\d,]* contributions', flags=re.I))
 
     if contributions:
         contributions_text = contributions.text.strip()
@@ -109,5 +112,7 @@ if response.status_code == 200:
         print(player.total_exp)
     else:
         print("Contributions data not found.")
+        exit(1) 
 else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
+    exit(1) 
