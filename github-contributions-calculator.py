@@ -73,12 +73,13 @@ class Player:
         self._update_levels()
 
     def _update_levels(self) -> None:
-        """Apply as many level‑ups as needed for total_exp."""
-        growth = 0.75  # +75 % per level (unchanged from your original curve)
+        growth = 1.75                     # multiply the gap, not the total
+        gap    = self.required_exp        # first gap = 100
         while self.total_exp >= self.required_exp:
-            self.level          += 1
-            self.prev_threshold  = self.required_exp
-            self.required_exp    += round(self.required_exp * growth)
+            self.level         += 1
+            self.prev_threshold = self.required_exp
+            gap                = round(gap * growth)   # next gap
+            self.required_exp  += gap                  # new threshold
         self.current_exp = self.total_exp - self.prev_threshold
 
     def to_dict(self) -> dict:
