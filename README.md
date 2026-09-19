@@ -202,19 +202,16 @@
 <!-- Character Story -->
 <h2 align="center">📖 Lore</h2>
 <p>
-  I'm a full-stack developer and low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is improved--I will have won.
+  I'm a low-level tinkerer on a mission to build digital experiences not found elsewhere. I view all my projects as adventurous quests! Each minor bug is a monster to grind, and the greatest of challenges... be the dragons. As I slay my way to completed applications, real-world problems reveal their solutions. If I can make an impact with my software--if just one person's life is improved--I will have won.
 </p>
 
 ---
 <!-- Quest Log -->
 <h2 align="center">📜 Quest Log</h2>
 <ul>
-  <li>Complete a Diploma in Digital Technology Development and Design</li>
-  <li>Contribute to an Open Source Project</li>
-  <li>Learn the basics of x86 Assembly</li>
   <li>Develop a game and upload it to Steam</li>
+  <li>Contribute to an Open Source Project</li>
   <li><strong>(Epic)</strong>: Write a compiler for a C-based language</li>
-  <li><strong>(Legendary)</strong>: Develop a micro-operating system from scratch</li>
 </ul>
 
 ---
