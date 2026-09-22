@@ -60,3 +60,4 @@ with open("log.txt", "a") as log_file:
 2025-06-11T11:58:13.738518  scraped=282  delta=0  total=1877
 2025-06-12T11:57:52.603806  scraped=282  delta=0  total=1877
 2025-06-13T11:57:59.104878  scraped=282  delta=0  total=1877
+2026-09-22T08:40:46.647089Z  lifetime=377  level=3  current=102  required=306  remaining=204  yearly={"2021": 1, "2022": 0, "2023": 2, "2024": 269, "2025": 77, "2026": 28}
