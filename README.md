@@ -54,7 +54,7 @@
 <!-- Attributes -->
 <h2 align="center">🧮 Attributes</h2>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=xevithirus&show_icons=true&theme=transparent" alt="GitHub Stats">
+  <img src="./images/github-stats.svg" alt="GitHub Stats">
 </p>
 
 ---
