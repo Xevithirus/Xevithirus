@@ -18,6 +18,15 @@ jobs:
       - name: Check out profile repository
         uses: actions/checkout@v4
 
+      - name: Generate GitHub stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=transparent
+          path: images/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -43,13 +52,15 @@ jobs:
           git add total_exp.json
           git add total_exp_backup.json
           git add log.txt
+          git add images/exp-bar.svg
+          git add images/github-stats.svg
 
           if git diff --cached --quiet; then
             echo "No profile changes to commit."
             exit 0
           fi
 
-          git commit -m "chore: auto-update character EXP"
+          git commit -m "chore: auto-update RPG profile"
 
           git pull --rebase origin main
           git push origin main
