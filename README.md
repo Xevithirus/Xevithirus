@@ -31,14 +31,12 @@
       </tr>
       <tr>
         <td><strong>Total Experience:</strong></td>
-        <td><!--total_exp-->380<!--/total_exp--></td>
+        <td><!--total_exp-->384<!--/total_exp--></td>
       </tr>
       <tr>
         <td><strong>EXP Progress:</strong></td>
         <td>
-          <!--to_next_level-->
-          <img src="./images/exp-bar.svg" alt="EXP Progress" height="18"> 33%
-          <!--/to_next_level-->
+          <!--to_next_level--><img src="./images/exp-bar.svg" alt="EXP Progress" height="18"> 35.6%<!--/to_next_level-->
         </td>
       </tr>
       <tr>
