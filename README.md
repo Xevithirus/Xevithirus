@@ -36,7 +36,9 @@
       <tr>
         <td><strong>EXP Progress:</strong></td>
         <td>
-          <!--to_next_level-->105/306<!--/to_next_level-->
+          <!--to_next_level-->
+          <img src="./images/exp-bar.svg" alt="EXP Progress" height="18"> 33%
+          <!--/to_next_level-->
         </td>
       </tr>
       <tr>
