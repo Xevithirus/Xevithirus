@@ -178,8 +178,7 @@
 ◇ Novice &nbsp; → &nbsp;
 ◆ Apprentice &nbsp; → &nbsp;
 ◆◆ Adept &nbsp; → &nbsp;
-◆◆◆ Expert &nbsp; → &nbsp;
-✦ Master
+◆◆◆ Expert &nbsp; 
 </sub>
 </p>
 
@@ -197,41 +196,41 @@
 </tr>
 <tr>
 <td align="center"><sub>MAIN HAND</sub></td>
-<td align="center" title="Name: Mouse&#10;Description: Precision input device. +10 Cursor Accuracy and +5 Click Speed.">
+<td align="center" title="Name: Logitech G502 Lightspeed&#10;Type: Mouse&#10;Description: Precision input device that enhances selection skills.&#10; +10 Accuracy&#10; -5 Keystroke Speed">
 🖱️
 </td>
 <td align="center"><sub>OFF HAND</sub></td>
-<td align="center" title="Name: Mechanical Keyboard&#10;Description: +10 Typing Speed. Clicks like thunder.">
+<td align="center" title="Name: Corsair K100&#10;Type: Mechanical Keyboard&#10;Description: Enhances Keystroke speed with clean auditory feedback.&#10; +15 Keystroke Speed">
 ⌨️
 </td>
 </tr>
 <tr>
 <td align="center"><sub>HEAD</sub></td>
-<td align="center" title="Name: Headphones&#10;Description: Blocks distractions. Grants Deep Work +1.">
+<td align="center" title="Name: Ancient HD 350BT&#10;Type: Headphones&#10;Description: Falling apart, but still effectively blocks distractions.&#10; Grants Deep Work Buff (+1 to Focus)">
 🎧
 </td>
 <td align="center"><sub>ACCESSORY</sub></td>
-<td align="center" title="Name: Blue-light Glasses&#10;Description: Reduces screen fatigue. +3 Eye Comfort.">
+<td align="center" title="Name: Titanium-IP Air&#10;Type: Glasses&#10;Description: Reduces screen fatigue.&#10; +3 Blue-light Resistance">
 👓
 </td>
 </tr>
 <tr>
 <td align="center"><sub>BODY</sub></td>
-<td align="center" title="Name: Fuzzy Robe&#10;Description: Soft enchanted loungewear. +8 Comfort and +2 Cold Resistance.">
+<td align="center" title="Name: Fuzzy Bambury XL&#10;Type: Robe&#10;Description: Soft enchanted loungewear.&#10; +8 Comfort&#10; +2 Cold Resistance">
 🥋
 </td>
 <td align="center"><sub>LEGS</sub></td>
-<td align="center" title="Name: Sleep Pants&#10;Description: Maximum mobility with minimum effort. +6 Comfort.">
+<td align="center" title="Name: Cotton Bonds&#10;Type: Sleep Pants&#10;Description: Enhances bathroom convenience and comfort.&#10; +6 Comfort">
 👖
 </td>
 </tr>
 <tr>
 <td align="center"><sub>ARMOR</sub></td>
-<td align="center" title="Name: Back Brace&#10;Description: Reinforces the lower-back defense stat during long coding sessions.">
+<td align="center" title="Name: Lumbar Hugger&#10;Type: Back Brace&#10;Description: Improves lower-back defense during long coding sessions.&#10; +25 Defense">
 🛡
 </td>
 <td align="center"><sub>FEET</sub></td>
-<td align="center" title="Name: Comfy Socks&#10;Description: +5 Comfort. Keeps feet warm and ideas flowing.">
+<td align="center" title="Name: Quarter Crews&#10;Type: Socks&#10;Description: Keeps feet warm and reduces distractions.&#10; +1 Comfort&#10; +1 Focus">
 🧦
 </td>
 </tr>
@@ -242,54 +241,53 @@
 </tr>
 </table>
 
-<p align="center"><em>Hover over equipped items for details</em></p>
 
-<h3 align="center">Adventurer's Sack</h3>
+<h3 align="center">Items</h3>
 <table align="center">
 <tr>
-<th colspan="3" align="center">💰 Bag — 5 / 9 Slots</th>
+<th colspan="3" align="center">Netherweave Backpack</th>
 </tr>
 <tr>
-<td align="center" width="150" title="Name: Coffee&#10;Description: Boosts coding energy and reduces the Sleepiness debuff.&#10;Quantity: 8">
+<td align="center" width="50" title="Name: Homebrewed Java&#10;Type: Coffee&#10;Description: Boosts energy and reduces Fatigue debuffs.&#10;Quantity: 8">
 ☕
 </td>
-<td align="center" width="150" title="Name: Instant Ramen&#10;Description: Restores HP and morale. Cheap, quick, essential.&#10;Quantity: 2">
+<td align="center" width="50" title="Name: BaiXiang Soup&#10;Type: Instant Ramen&#10;Description: Restores HP and provides morale buff. Cheap, quick, essential.&#10;Quantity: 2">
 🍜
 </td>
-<td align="center" width="150" title="Name: Energy Drink&#10;Description: +20 Speed. May trigger Debug Frenzy.&#10;Quantity: 1">
+<td align="center" width="50" title="Name: Red Bull&#10;Type: Energy Drink&#10;Description: Temporary energy boost. May trigger Crash Debug.&#10;Quantity: 1">
 🔋
 </td>
 </tr>
 <tr>
-<td align="center" width="150" title="Name: Ultrawide Monitor&#10;Description: Expands IDE vision range and grants +10 Multitasking.&#10;Quantity: 1">
+<td align="center" width="50" title="Name: Titan Army 34GLR&#10;Type: Ultrawide Monitor&#10;Description: Expands workspace vision range and grants Multitasking.&#10;Quantity: 1">
 🖥️
 </td>
-<td align="center" width="150" title="Name: Smartphone&#10;Description: Portable communications device. Grants +5 Connectivity and unlimited side quests.&#10;Quantity: 1">
+<td align="center" width="50" title="Name: Samsung Galaxy&#10;Type: Smartphone&#10;Description: Provides communications to the outside world. Grants Connected.&#10;Quantity: 1">
 📱
 </td>
-<td align="center" width="150" title="Empty inventory slot.">
+<td align="center" width="50" title="Empty inventory slot.">
 ◻️
 </td>
 </tr>
 <tr>
-<td align="center" width="150" title="Empty inventory slot.">
+<td align="center" width="50" title="Empty inventory slot.">
 ◻️
 </td>
-<td align="center" width="150" title="Empty inventory slot.">
+<td align="center" width="50" title="Empty inventory slot.">
 ◻️
 </td>
-<td align="center" width="150" title="Empty inventory slot.">
+<td align="center" width="50" title="Empty inventory slot.">
 ◻️
 </td>
 </tr>
 <tr>
 <td colspan="3" align="center">
-<sub>🪙 Gold: 0 &nbsp;&nbsp; | &nbsp;&nbsp; 💰 Capacity: 5 / 9</sub>
+<sub>🪙 Gold: 1 &nbsp;&nbsp;&nbsp;&nbsp; Capacity: 5 / 9</sub>
 </td>
 </tr>
 </table>
 
-<p align="center"><em>Hover over bag items for details</em></p>
+<p align="center"><em>Hover over items for details</em></p>
 
 ---
 <!-- Character Story -->
