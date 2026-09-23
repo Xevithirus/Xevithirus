@@ -282,7 +282,7 @@
 </tr>
 <tr>
 <td colspan="3" align="center">
-<sub>🪙 Gold: 1 &nbsp;&nbsp;&nbsp;&nbsp; Capacity: 5 / 9</sub>
+<sub>🪙 Gold: 1 </sub> 
 </td>
 </tr>
 </table>
