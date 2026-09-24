@@ -23,7 +23,7 @@
     </tr>
     <tr>
       <td><strong>Specialization:</strong></td>
-      <td>Full-Stack Developer</td>      
+      <td>Game Designer</td>      
     </tr>
       <tr>
         <td><strong>Level:</strong></td>
