@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "total_exp": 411,
-  "last_scraped": 62,
+  "total_exp": 431,
+  "last_scraped": 82,
   "yearly_contributions": {
     "2021": 1,
     "2022": 0,
     "2023": 2,
     "2024": 269,
     "2025": 77,
-    "2026": 62
+    "2026": 82
   },
-  "updated_at": "2026-09-27T15:29:18.567584Z"
+  "updated_at": "2026-09-28T18:20:39.616800Z"
 }
